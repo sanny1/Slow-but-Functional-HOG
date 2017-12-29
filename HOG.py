@@ -150,17 +150,15 @@ def HOG(edges,grad_img):
     return Hog_val, vis_hog
 
 
-
-
 def main():
-    img = cv2.imread("teaser-original.jpg",0)
+    img = cv2.imread("Bikesgray.jpg",0)
     edges, img_grad = Sobel_op(img)
     ret, thresh = cv2.threshold(edges,120,255,cv2.THRESH_BINARY)
 
     H,v_h = HOG(edges,img_grad)
 
     cv2.imshow("th",thresh)
-    cv2.imshow("H_v", v_h)
+    cv2.imwrite("H_v.png", v_h)
 
     cv2.waitKey(0)
     cv2.destoryAllWindows()
