@@ -15,4 +15,6 @@ There are three main function in HOG.py file which are:
    of HOG and HOG value
 
 Here is a Visualisation of HOG.
- 
+![alt text](https://github.com/sanny1/Slow-but-Functional-HOG/blob/master/visual_of_HOG.png)
+
+![alt text](https://github.com/sanny1/Slow-but-Functional-HOG/blob/master/Bikesgray.jpg)
