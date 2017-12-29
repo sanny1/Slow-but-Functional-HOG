@@ -158,7 +158,7 @@ def main():
     H,v_h = HOG(edges,img_grad)
 
     cv2.imshow("th",thresh)
-    cv2.imwrite("H_v.png", v_h)
+    cv2.imshow("H_v", v_h)
 
     cv2.waitKey(0)
     cv2.destoryAllWindows()
